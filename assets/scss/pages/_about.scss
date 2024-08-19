@@ -1,0 +1,6 @@
+.about-month{
+  width: 42px;
+  @include media-breakpoint-up(lg) {
+    width: 52px;
+  }
+}

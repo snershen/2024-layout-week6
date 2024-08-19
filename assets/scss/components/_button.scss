@@ -1,0 +1,33 @@
+.btn {
+  letter-spacing: 0.1em;
+  &.btn-secondary-200 {
+    color: white;
+    &:hover {
+      background: $accent-300;
+      border: solid 1px $accent-300;
+    }
+    &:disabled {
+      background: $neutral-200;
+      border: solid 1px $neutral-200;
+    }
+  }
+  &.text-secondary-200 {
+    &:hover {
+      color: $accent-300 !important;
+    }
+  }
+  &.btn-gray-100 {
+    color: $neutral-400;
+    &:hover {
+      background: $accent-200;
+      color: white;
+    }
+  }
+}
+
+.badge {
+  transition: opacity 0.5s;
+  &:hover {
+    opacity: 0.8;
+  }
+}

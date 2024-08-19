@@ -1,0 +1,67 @@
+* {
+  // outline: solid 1px;
+}
+
+body,
+input {
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+picture,
+time {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+button,
+a {
+  letter-spacing: 0.1em;
+}
+
+.bi {
+  font-size: 1.25rem;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
+}
+
+.font-eng {
+  font-family: "Newsreader", serif;
+}
+
+.font-number {
+  font-family: "Gurmukhi MN", sans-serif;
+}
+
+.list-group-item {
+  color: $gray-600;
+}
+
+.list-group-item.active {
+  background: $accent-200;
+}
+
+.breadcrumb {
+  color: $neutral-400;
+}

@@ -1,0 +1,10 @@
+.pay .card {
+  transition: .5s;
+  &:hover {
+    color: $neutral-500;
+    border: solid 1px $accent-200;
+    .card-title {
+      color: $accent-200;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre | 登入</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container py-lg-12 py-10">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="p-lg-8 p-5 bg-white border border-1 border-primary-300 rounded-4">
+            <form action="" class="mb-lg-8 mb-5">
+              <h1 class="fs-4 text-secondary-200 mb-lg-8 mb-5">登入</h1>
+              <ul class="mb-lg-8 mb-5 list-unstyled">
+                <li class="mb-3">
+                  <label for="signup-account" class="form-label mb-2">會員帳號</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="signup-account"
+                    class="form-control"
+                    placeholder="請輸入會員帳號"
+                    aria-describedby="helpId"
+                  />
+                </li>
+                <li class="mb-3">
+                  <label for="signup-password" class="form-label mb-2">密碼</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="signup-password"
+                    class="form-control"
+                    placeholder="請輸入密碼"
+                    aria-describedby="helpId"
+                  />
+                </li>
+              </ul>
+              <button
+                type="submit"
+                class="btn btn-secondary-200 py-2 w-100 d-flex justify-content-center align-items-center"
+              >
+                立即登入<i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </form>
+            <p class="form-other-title text-gray-300 mb-lg-8 mb-5">或以其他方式登入</p>
+            <ul class="mb-lg-7 mb-5 list-unstyled">
+              <li class="mb-2">
+                <button type="submit" class="form-other-btn btn py-2 btn-gray-100 w-100">
+                  <img src="../assets/images/icons-google.png" alt="google" class="me-2 align-bottom" />使用 Google 登入
+                </button>
+              </li>
+              <li>
+                <button type="submit" class="form-other-btn btn py-2 btn-gray-100 w-100">
+                  <img src="../assets/images/icons-facebook.png" alt="facebook" class="me-2 align-bottom" />使用
+                  Facebook 登入
+                </button>
+              </li>
+            </ul>
+            <div class="text-center">
+              已經是會員了？<a href="#" class="ms-2 text-secondary-200 link-secondary-200">點此註冊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

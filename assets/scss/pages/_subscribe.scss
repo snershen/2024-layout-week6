@@ -1,0 +1,22 @@
+.subscribe .card {
+  color: $neutral-400;
+  transition: .5s;
+  .btn-gray-100 {
+    color: $neutral-400;
+  }
+  &:hover {
+    color: $neutral-500;
+    border: solid 1px $accent-200;
+    .card-price {
+      color: $accent-200;
+    }
+    .btn {
+      background: $accent-200;
+      color: white;
+    }
+    .btn-gray-100 {
+      background: $accent-200;
+      color: white;
+    }
+  }
+}

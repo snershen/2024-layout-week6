@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre｜付款</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="pay container py-lg-12 pt-3">
+      <nav class="breadcrumb mb-lg-4 mb-1">
+        <a class="breadcrumb-item" href="index.html">首頁</a>
+        <a class="breadcrumb-item" href="subscription.html">訂閱方案</a>
+        <span class="breadcrumb-item active" aria-current="page">付款</span>
+      </nav>
+      <h1 class="mb-lg-10 mb-8">付款</h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <div class="d-flex card bg-white p-lg-8 p-5 mb-5">
+            <div class="card-head pb-lg-8">
+              <h2 class="card-title fs-lg-4 fs-5 mb-lg-8 mb-5">購買人</h2>
+              <form action="" class="mb-lg-8 mb-5">
+                <ul class="mb-lg-8 mb-5 list-unstyled">
+                  <li class="mb-3">
+                    <label for="name" class="form-label mb-2">姓名</label>
+                    <input
+                      type="text"
+                      name=""
+                      id="name"
+                      class="form-control"
+                      placeholder="請輸入姓名"
+                      aria-describedby="helpId"
+                    />
+                  </li>
+                  <li class="mb-3">
+                    <label for="password" class="form-label mb-2">密碼</label>
+                    <input
+                      type="password"
+                      name=""
+                      id="password"
+                      class="form-control"
+                      placeholder="請輸入密碼"
+                      aria-describedby="helpId"
+                    />
+                  </li>
+                  <li class="mb-5">
+                    <label for="email" class="form-label mb-2">電子信箱</label>
+                    <input
+                      type="email"
+                      name=""
+                      id="email"
+                      class="form-control"
+                      placeholder="請輸入電子信箱"
+                      aria-describedby="helpId"
+                    />
+                  </li>
+                  <li class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault"> 記住我的資訊 </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <div class="d-flex card bg-white p-lg-8 p-5">
+            <div class="card-head pb-lg-8">
+              <h2 class="card-title fs-lg-5 fs-6 mb-lg-8 mb-5">付款方式</h2>
+              <form action="" class="mb-lg-8 mb-5">
+                <ul class="mb-lg-8 mb-5 list-unstyled">
+                  <li class="mb-lg-8 mb-5">
+                    <p class="font-eng mb-3">Pay With</p>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                      <label class="form-check-label" for="flexRadioDefault1"> 信用卡 </label>
+                    </div>
+                  </li>
+                  <li class="mb-3">
+                    <label for="cerditcard" class="form-label mb-2">信用卡號碼</label>
+                    <input
+                      type="text"
+                      name=""
+                      id="cerditcard"
+                      class="form-control"
+                      placeholder="1234 5678 1234 5678"
+                      aria-describedby="helpId"
+                    />
+                  </li>
+                  <li class="mb-3">
+                    <label for="expired" class="form-label mb-2">過期日</label>
+                    <input
+                      type="text"
+                      name=""
+                      id="expired"
+                      class="form-control"
+                      placeholder="ＭＭ/YY"
+                      aria-describedby="helpId"
+                    />
+                  </li>
+                  <li class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="cardInfo" />
+                    <label class="form-check-label" for="cardInfo"> 記住卡片資訊 </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-lg-0 mt-5 mb-lg-0 mb-10">
+          <div class="d-flex card bg-white p-lg-8 p-5">
+            <div class="card-head pb-lg-8">
+              <h2 class="card-title fs-lg-4 fs-5  border-bottom pb-lg-8 pb-5 mb-5">訂單資訊</h2>
+              <div class="border-bottom pb-5 mb-5">
+                <div class="d-flex justify-content-between mb-2">
+                  <h3 class="fs-lg-5">輕量型方案</h3>
+                  <p class="font-eng fs-lg-5">NT 1,188</p>
+                </div>
+                <p class="text-gray-400">年繳</p>
+              </div>
+              <div class="border-bottom pb-5 mb-5">
+                <div class="mb-2">
+                  <form action="">
+                    <label for="couponCode" class="form-label mb-2">折扣碼</label>
+                    <div class="d-flex">
+                      <input
+                        type="text"
+                        name=""
+                        id="couponCode"
+                        class="form-control me-2"
+                        placeholder="請輸入折扣碼"
+                        aria-describedby="helpId"
+                      />
+                      <button class="btn btn-gray-100">套用</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="border-bottom pb-5 mb-5">
+                <div class="mb-2">
+                  <div class="d-flex justify-content-between mb-2">
+                    <p>小計</p>
+                    <p class="font-eng">NT 1,188</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p>折扣</p>
+                    <p class="font-eng">0</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-5 mb-5">
+                <div class="mb-2">
+                  <div class="d-flex justify-content-between mb-2">
+                    <p>總計</p>
+                    <p class="font-eng fs-lg-3 fs-4">NT 1,188</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="pay-result.html"
+              type="submit"
+              class="btn btn-secondary-200 py-2 w-100 d-flex justify-content-center align-items-center"
+            >
+              立即付款<i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
