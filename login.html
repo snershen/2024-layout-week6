@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivre | 登入</title>
+    <script type="module" crossorigin src="/2024-layout-week6/assets/main-3270d0bb.js"></script>
+    <link rel="stylesheet" href="/2024-layout-week6/assets/main-7afca196.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-0">
+  <div class="container">
+    <div class="border-bottom-lg-1 border-bottom-0 border-gray-300 d-lg-flex align-items-center w-100 py-lg-6 py-0">
+      <div class="py-lg-0 py-4 d-flex justify-content-between">
+        <a class="navbar-brand me-6" href="index.html"><img src="/2024-layout-week6/assets/logo-d016c538.svg" alt="Vivre" /></a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex flex-column flex-lg-row position-relative mb-lg-0 mb-5 me-auto" role="search">
+          <input
+            class="form-control rounded-pill border border-gray-200 bg-white pe-8 "
+            type="search"
+            placeholder="搜尋文章"
+            aria-label="Search"
+          />
+          <button
+            class="btn p-0 border-0 text-secondary-200 position-absolute end-0 top-50 me-2 translate-middle-y"
+            type="submit"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-5 gap-lg-0">
+          <li class="nav-item">
+            <a class="nav-link me-4 px-lg-4 px-2 py-lg-1 py-2 active" aria-current="page" href="article-lock.html">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4 px-lg-4 px-2 py-lg-1 py-2" href="subscription.html">訂閱方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4 px-lg-4 px-2 py-lg-1 py-2" href="about.html">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a href="sign.html" class="btn btn-secondary-200 text-white fw-bold w-100">登入 / 註冊</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="container py-lg-12 py-10">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="p-lg-8 p-5 bg-white border border-1 border-primary-300 rounded-4">
+            <form action="" class="mb-lg-8 mb-5">
+              <h1 class="fs-4 text-secondary-200 mb-lg-8 mb-5">登入</h1>
+              <ul class="mb-lg-8 mb-5 list-unstyled">
+                <li class="mb-3">
+                  <label for="signup-account" class="form-label mb-2">會員帳號</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="signup-account"
+                    class="form-control"
+                    placeholder="請輸入會員帳號"
+                    aria-describedby="helpId"
+                  />
+                </li>
+                <li class="mb-3">
+                  <label for="signup-password" class="form-label mb-2">密碼</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="signup-password"
+                    class="form-control"
+                    placeholder="請輸入密碼"
+                    aria-describedby="helpId"
+                  />
+                </li>
+              </ul>
+              <button
+                type="submit"
+                class="btn btn-secondary-200 py-2 w-100 d-flex justify-content-center align-items-center"
+              >
+                立即登入<i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </form>
+            <p class="form-other-title text-gray-300 mb-lg-8 mb-5">或以其他方式登入</p>
+            <ul class="mb-lg-7 mb-5 list-unstyled">
+              <li class="mb-2">
+                <button type="submit" class="form-other-btn btn py-2 btn-gray-100 w-100">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="google" class="me-2 align-bottom" />使用 Google 登入
+                </button>
+              </li>
+              <li>
+                <button type="submit" class="form-other-btn btn py-2 btn-gray-100 w-100">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="facebook" class="me-2 align-bottom" />使用
+                  Facebook 登入
+                </button>
+              </li>
+            </ul>
+            <div class="text-center">
+              已經是會員了？<a href="#" class="ms-2 text-secondary-200 link-secondary-200">點此註冊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-primary-400">
+  <div class="container border-top py-4">©Vivre 2024 All right Reserved</div>
+</footer>
+
+    
+  </body>
+</html>
